@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boyfriend's Day</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(to bottom, white, lightpink);
+            overflow: hidden;
+            position: relative;
+        }
+
+        .heart-container {
+            position: relative;
+            text-align: center;
+            z-index: 1;
+        }
+
+        .heart-image {
+            width: 150px;
+            height: 150px;
+            cursor: pointer;
+        }
+
+        .hover-text {
+            display: none;
+            position: absolute;
+            top: 110%;
+            left: 50%;
+            transform: translateX(-50%);
+            font-family: Arial, sans-serif;
+            font-size: 24px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .heart-container:hover .hover-text {
+            display: block;
+        }
+
+        /* Floating Iron Man Animation */
+        .ironman {
+            position: absolute;
+            width: 100px;
+            height: auto;
+            animation: float 20s infinite linear;
+        }
+
+        /* Keyframes for the floating animation */
+        @keyframes float {
+            0% {
+                transform: translate(0, 0);
+            }
+            25% {
+                transform: translate(var(--x1), var(--y1));
+            }
+            50% {
+                transform: translate(var(--x2), var(--y2));
+            }
+            75% {
+                transform: translate(var(--x3), var(--y3));
+            }
+            100% {
+                transform: translate(0, 0);
+            }
+        }
+
+        /* Floating Iron Man Positions */
+        .ironman:nth-child(1) { 
+            --x1: 15vw; --y1: 5vh; 
+            --x2: -5vw; --y2: 10vh; 
+            --x3: 10vw; --y3: -5vh; 
+        }
+        .ironman:nth-child(2) { 
+            --x1: 20vw; --y1: -10vh; 
+            --x2: -15vw; --y2: 5vh; 
+            --x3: 5vw; --y3: 10vh; 
+        }
+        .ironman:nth-child(3) { 
+            --x1: -10vw; --y1: 15vh; 
+            --x2: 10vw; --y2: -5vh; 
+            --x3: 20vw; --y3: 5vh; 
+        }
+        .ironman:nth-child(4) { 
+            --x1: 5vw; --y1: -20vh; 
+            --x2: -20vw; --y2: 0vh; 
+            --x3: 15vw; --y3: 10vh; 
+        }
+        .ironman:nth-child(5) { 
+            --x1: 10vw; --y1: 5vh; 
+            --x2: -15vw; --y2: 15vh; 
+            --x3: 0; --y3: -10vh; 
+        }
+        .ironman:nth-child(6) { 
+            --x1: -5vw; --y1: -15vh; 
+            --x2: 20vw; --y2: 10vh; 
+            --x3: 10vw; --y3: 0; 
+        }
+        .ironman:nth-child(7) { 
+            --x1: 15vw; --y1: -5vh; 
+            --x2: -10vw; --y2: 5vh; 
+            --x3: 5vw; --y3: 10vh; 
+        }
+        .ironman:nth-child(8) { 
+            --x1: -15vw; --y1: 10vh; 
+            --x2: 5vw; --y2: -10vh; 
+            --x3: 20vw; --y3: 5vh; 
+        }
+        .ironman:nth-child(9) { 
+            --x1: 10vw; --y1: -5vh; 
+            --x2: -20vw; --y2: 15vh; 
+            --x3: 0; --y3: 10vh; 
+        }
+        .ironman:nth-child(10) { 
+            --x1: -10vw; --y1: 5vh; 
+            --x2: 15vw; --y2: 0; 
+            --x3: 5vw; --y3: -20vh; 
+        }
+    </style>
+</head>
+<body>
+
+    <div class="heart-container">
+        <a href="https://youtube.com/shorts/ca4DoiKooBI?si=huC6J8khJKL3UNLA" target="_blank">
+            <img src="heart.png" alt="Heart" class="heart-image">
+        </a>
+        <div class="hover-text">Happy Boyfriend's Day</div>
+    </div>
+
+    <!-- 10 Floating Iron Man Images -->
+    <img src="ironman.png" alt="Iron Man" class="ironman" style="top: 10%; left: 20%;">
+    <img src="ironman.png" alt="Iron Man" class="ironman" style="top: 50%; left: 30%;">
+    <img src="ironman.png" alt="Iron Man" class="ironman" style="top: 20%; left: 70%;">
+    <img src="ironman.png" alt="Iron Man" class="ironman" style="top: 80%; left: 40%;">
+    <img src="ironman.png" alt="Iron Man" class="ironman" style="top: 10%; left: 80%;">
+    <img src="ironman.png" alt="Iron Man" class="ironman" style="top: 70%; left: 10%;">
+    <img src="ironman.png" alt="Iron Man" class="ironman" style="top: 40%; left: 60%;">
+    <img src="ironman.png" alt="Iron Man" class="ironman" style="top: 60%; left: 20%;">
+    <img src="ironman.png" alt="Iron Man" class="ironman" style="top: 30%; left: 40%;">
+    <img src="ironman.png" alt="Iron Man" class="ironman" style="top: 50%; left: 70%;">
+
+</body>
+</html>
